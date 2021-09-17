@@ -54,4 +54,14 @@ def math_operations():
     print(3 * 3 + 3 / 3 - 3) # PEMDAS -> returns a float obj
     print(3 + 3 + 3 - 3 - 3)
     print((3 * 3) / 3 - 3 + 3)
-math_operations()
+
+# BMI Calculator. Create a calculator to calculate the Body Mass Index (BMI) from a user's weight and height | Form: BMI = weight(kg)/height^2(m^2)
+# Person A - 160 pounds 6'0 | Person B - 160 pounds 5'0 | Even though they are both same weight, person B is overweight since he is shorter
+def exercise2():
+    height = float(input("Enter your height in m: "))
+    weight = float(input("Enter your weight in kg: "))
+    
+    bmi = int(weight/(height ** 2))
+    print("Your BMI: " + str(bmi))
+
+exercise2()
