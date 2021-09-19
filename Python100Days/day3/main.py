@@ -110,6 +110,18 @@ def exercise2():
 on every year that is divible by 4
     except every year is divisible by 100
         unless the year is divisible by 400
+            [START]
+               |
+    NO    (year / 4?)     YES
+    |                      |
+    |                      |
+ [Not leap year]   NO   (year/100?)  YES
+                   |                  | 
+                   |                  |
+                [Leap year]    NO (year/400?) YES
+                               |              |
+                               |              |
+                        [Not leap year]     [Leap Year]
 '''
 
 def isLeapYear():
