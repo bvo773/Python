@@ -13,7 +13,7 @@ print('''
              \  /   __  ./
               \=`   ==,\..
                \ -. `,' (333
-               3`--''    \33.
+               3`--''    ###.
              ,333_) /mm33333:.
             |:#:mmmmmm333333::|
             |:#:333333333::##'|
@@ -56,7 +56,7 @@ choice = str(input("Would you like to go \"Left\" or \"Right\"? ")).lower()
 if choice == "left":
     choice = str(input('"I can sense her chakra inaide the tunnel". "Go" or Wait"? ')).lower()
     if choice == "wait":
-        choice = str(input("Which door to open? \"Red\",\"Blue\",\"Yellow\"?")).lower()
+        choice = str(input("Which door to open? \"Red\",\"Blue\",\"Yellow\"? ")).lower()
         if choice == "red":
             print("You were burned by fire. Game Over!")
         elif choice == "blue":
