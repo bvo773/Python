@@ -62,3 +62,36 @@ def coinToss():
 		else:
 			print(" Tails")
 
+'''
+41 - List
+DOC: https://docs.python.org/3/tutorial/datastructures.html
+A list is data structure.
+ Data Structures: are methods or ways to organize and store data efficiently
+ A variable can only store a single piece of data (int, string)
+ A data structure can store grouped pieces of data (data that has relation or connection to each other)
+ Eg) Store all the names of the US States together as one
+
+Python List - A set of square brackets [] with many items stored inside. The items can be any data type.
+It can even have a mixed data types [store strings, numbers, or set of booleans]
+			index				0 		 1      2
+ Eg) fruits = | [item1, item2, item3] 
+					(begin)
+ 		 - item1 is at the beginning of the list (offset or a shift of 0)
+		 - item2 is shifted from the beginning by 1 
+		 - item3 is shifted from the beginning by 2
+'''
+def pythonList():
+	usStates = ["California", "Illinois","Delaware","New York","Connecticut"]
+	print(f'First element in list: {usStates[0]}') # first item
+	print(f'Last element in the list: {usStates[-1]}') # last item in the last
+	print(f'Second to last element in the list {usStates[-2]}')
+
+	# Modify list to set a new piece of data
+	usStates[0] = "Oregon" # At index 0, oregon is the new data 
+	# Add an item to the end of the list: append()
+	usStates.append("Binhlalaland")
+	# Add multiple items to the list: extend(), extend the list by combining to the prev. list
+	usStates.extend(["Yogurtland", "SnorlaxLand"])
+	print(usStates)
+	
+pythonList()
