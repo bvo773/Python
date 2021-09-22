@@ -94,4 +94,93 @@ def pythonList():
 	usStates.extend(["Yogurtland", "SnorlaxLand"])
 	print(usStates)
 	
-pythonList()
+'''
+42 - Bankers Roulete Who Pays The Bill: at the end of the meal, rich bankers put all their credit cards in a bowl, whoever card is drawn pays the bill
+Method: str.split(), random.randint(), random.choice()
+Documentation:
+- random.choice(): https://www.askpython.com/python-modules/python-random-module-generate-random-numbers-sequences
+- string to List: https://www.askpython.com/python/string/convert-string-to-list-in-python
+'''
+def bankerRoulete():
+	import random
+	rich_bankers = str(input("Participant bank players separated by a comma.\n ")).split(", ") # param: the character(s) to split -> ", " (comma and blank space)
+	person_who_paid = random.choice(rich_bankers)
+	# person_who_paid = rich_bankers[random.randint(0, len(rich_bankers)-1)]
+	print(f"{person_who_paid} is going to pay the Bill!")
+
+'''
+43 - IndexErrors and working with nested lists
+  0      1
+[item1,item2][2]  -> IndexError: list index out of range
+
+TIP:use len() to check the size of the list
+'''
+def hightPesticidesFood():
+	'''dirtyDozen = ["Strawberries", "Spinach", "Kale", "Nectaries", "Apples", "Grapes",
+	"Peaches", "Cherries"]'''
+
+	fruits = ["Strawberries","Nectarines","Apples","Grapes","Peaches","Cherries",
+	"Pears"]
+
+	vegetables = ["Spinach","Kale","Tomatoe","Celery","Potatoes"]
+
+  # create a nested list to combine the list for a list of dirty dozen
+	dirtyDozen = [fruits, vegetables] # a list containing 2 lists
+	print(dirtyDozen)
+	print(dirtyDozen[0])
+	print(dirtyDozen[1])
+	# accessing a nested lists: r x c -> arr[row][column]
+	print(dirtyDozen[0][1])
+	print(dirtyDozen[1][2])
+	print(dirtyDozen[1][3])
+
+'''
+41 - Treasure Map exercise: https://replit.com/@BinhVo2/day-4-3-exercise#README.md
+Row 3, Column 2 would be entered as: 32
+['⬜️', '⬜️', '⬜️']
+
+['⬜️', '⬜️', '⬜️']
+
+['⬜️', 'X', '⬜️']
+'''
+
+def treasureMap():
+	# 🚨 Don't change the code below 👇
+	row1 = ["⬜️","⬜️","⬜️"]
+	row2 = ["⬜️","⬜️","⬜️"]
+	row3 = ["⬜️","⬜️","⬜️"]
+	map = [row1, row2, row3]
+	print(f"{row1}\n{row2}\n{row3}")
+	position = input("Where do you want to put the treasure? (Row,Column) eg. 23: ")
+	# 🚨 Don't change the code above 👆
+
+	#Write your code below this row 👇
+	row = int(str(position[0])) - 1
+	column = int(str(position[1])) - 1
+	map[row][column] = "X"
+
+	#selected_row = map[row]
+	#selected_row[column] = "X"
+	#Write your code above this row 👆
+	
+	# 🚨 Don't change the code below 👇
+	print(f"{row1}\n{row2}\n{row3}")
+
+def treasureMapYu():
+	# 🚨 Don't change the code below 👇
+	row1 = ["⬜️","⬜️","⬜️"]
+	row2 = ["⬜️","⬜️","⬜️"]
+	row3 = ["⬜️","⬜️","⬜️"]
+	map = [row1, row2, row3]
+	print(f"{row1}\n{row2}\n{row3}")
+	position = input("Where do you want to put the treasure? (Column,Row) eg. 23: ")
+
+	column = int(str(position[0])) - 1
+	row = int(str(position[1])) - 1
+
+	# python understand multidimensioanl list by [row,col] 
+	map[row][column] = "X"
+
+	print(f"{map[0]}\n{map[1]}\n{map[2]}")
+
+treasureMapYu()
