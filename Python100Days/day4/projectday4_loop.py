@@ -41,7 +41,28 @@ sleep = '''
            (                |----         |  |
             `---------------'--\\\\      .`--'          
                                          `||||
+'''
 
+rocket = '''
+                           *     .--.
+                                / /  `
+               +               | |
+                      '         \ \__,
+                  *          +   '--'  *
+                      +   /\ 
+         +              .'  '.   *
+                *      /======\      +
+                      ;:.  _   ;
+                      |:. (_)  |
+                      |:.  _   |
+            +         |:. (_)  |          *
+                      ;:.      ;
+                    .' \:.    / `.
+                   / .-'':._.'`-. \  
+                   |/    /||\    \|
+             jgs _..--"""````"""--.._
+           _.-'``                    ``'-._
+         -'                                '-
 '''
 
 def playGame():
@@ -68,7 +89,7 @@ def playGame():
 		scissorsCheck = stringChoices[2]
 
 		if userChoice == cpuChoice:
-			print(f"\nUSER CHOICE:\n {asciiUser}\n\nCPU CHOICE:\n {asciiCpu}\n DRAW!")
+			print(f"\nUSER CHOICE:\n {asciiUser}\n\nCPU CHOICE:\n {asciiCpu}\n\t DRAW!")
 		else:
 			if (userChoice == rockCheck) and (cpuChoice == scissorsCheck):
 				print(f"\nUSER CHOICE:\n {asciiUser}\n\nCPU CHOICE:\n {asciiCpu}\n\t YOU WIN!")
@@ -90,16 +111,16 @@ try:
 		if (userChoiceNum == 1):
 			print("\n\tTHANKS FOR PLAYING KEEP ROCKING, PAPERING, AND SCISSORINGS!")
 			print("\n\tTERMINATING...\n")
-			print(sleep)
+			print(f"{rocket}{sleep}")
 			break
 		elif (userChoiceNum == 0):
 			continue
 		else:
-			print("\n\tINVALID CHOICE. LETS PLAY AGAIN SOON...\n\n\tTERMINATING...\n")
-			print(sleep)
+			print("\n\tINVALID CHOICE. NEXT TIME TRY 0 = YES, 1 = NO. LETS PLAY AGAIN SOON...\n\n\tTERMINATING...\n")
+			print(f"{rocket}{sleep}")
 			break
 
 except ValueError: # to catch invalid type that is not an integer choice - eg) invalid string -  "fsfdftv"
 	print("\n\tINVALID CHOICE. LETS PLAY AGAIN SOON...\n\n\tTERMINATING...\n")
-	print(sleep)
+	print(f"{rocket}{sleep}")
 
