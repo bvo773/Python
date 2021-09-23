@@ -1,5 +1,5 @@
 '''
-DAY 2 TOPICS - DATA TYPES | NUMBERS | OPERATIONS | TYPE CONVERSIO | f-String
+DAY 2 TOPICS - UNDERSTANDING DATA TYPES | NUMBERS | OPERATIONS | TYPE CONVERSIO | f-String
 '''
 
 #Python Primitive Data Types (String, Integer, Float, Boolean) - 17 
