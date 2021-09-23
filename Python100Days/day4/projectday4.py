@@ -35,42 +35,33 @@ stringChoices = ["rock","paper","scissors"]
 asciiChoices = [rock, paper, scissors]
 
 print(rock,paper,scissors)
-userChoice = str(input("ROCK, PAPER, OR SCISSORS:\n ")).lower()
-cpuChoice = str(stringChoices[random.randint(0, len(stringChoices)-1)])
 
-asciiCpu = ""
-asciiUser = ""
+userNumChoice = int(input("What do you choose? Type 0 for ROCK, 1 for PAPER, 2 for SCISSORS.\n "))
+cpuNumChoice = random.randint(0, len(stringChoices)-1)
 
-rockCheck = stringChoices[0]
-paperCheck = stringChoices[1]
-scissorsCheck = stringChoices[2]
-
-if cpuChoice == rockCheck: 
-	asciiCpu = asciiChoices[0]
-elif cpuChoice == paperCheck: 
-	asciiCpu = asciiChoices[1]
-else: 
-	asciiCpu = asciiChoices[2]
-
-if userChoice == rockCheck: 
-	asciiUser = asciiChoices[0]
-elif userChoice == paperCheck: 
-	asciiUser = asciiChoices[1]
-else: 
-	asciiUser = asciiChoices[2]
-
-if userChoice == cpuChoice:
-	print(f"\nDRAW!\nUSER CHOICE:\n {asciiUser}\n\nCPU CHOICE:\n {asciiCpu}")
+if (userNumChoice < 0 or userNumChoice > 2):
+	print("Invalid choice, you lose!")
 else:
-	if (userChoice == rockCheck) and (cpuChoice == scissorsCheck):
-		print(f"\nYOU WIN!\nUSER CHOICE:\n {asciiUser}\n\nCPU CHOICE:\n {asciiCpu}")
-	elif (userChoice == scissorsCheck) and (cpuChoice == paperCheck):
-		print(f"\nYOU WIN!\nUSER CHOICE:\n {asciiUser}\n\nCPU CHOICE:\n {asciiCpu}")
-	elif (userChoice == paperCheck) and (cpuChoice == rockCheck):
-		print(f"\nYOU WIN!\nUSER CHOICE:\n {asciiUser}\n\nCPU CHOICE:\n {asciiCpu}")
-	else:
-		print(f"\nSORRY, BETTER LUCK NEXT TIME!\nUSER CHOICE:\n {asciiUser}\n\nCPU CHOICE:\n {asciiCpu}")
+	userChoice = stringChoices[userNumChoice]	
+	cpuChoice = stringChoices[cpuNumChoice]
 
-		
+	asciiUser = asciiChoices[userNumChoice]
+	asciiCpu = asciiChoices[cpuNumChoice]
+
+	rockCheck = stringChoices[0]
+	paperCheck = stringChoices[1]
+	scissorsCheck = stringChoices[2]
+
+	if userChoice == cpuChoice:
+		print(f"\nUSER CHOICE:\n {asciiUser}\n\nCPU CHOICE:\n {asciiCpu}\n DRAW!")
+	else:
+		if (userChoice == rockCheck) and (cpuChoice == scissorsCheck):
+			print(f"\nUSER CHOICE:\n {asciiUser}\n\nCPU CHOICE:\n {asciiCpu}\n YOU WIN!")
+		elif (userChoice == scissorsCheck) and (cpuChoice == paperCheck):
+			print(f"\nUSER CHOICE:\n {asciiUser}\n\nCPU CHOICE:\n {asciiCpu}\n YOU WIN!")
+		elif (userChoice == paperCheck) and (cpuChoice == rockCheck):
+			print(f"\nUSER CHOICE:\n {asciiUser}\n\nCPU CHOICE:\n {asciiCpu}\n YOU WIN!")
+		else:
+			print(f"\nUSER CHOICE:\n {asciiUser}\n\nCPU CHOICE:\n {asciiCpu}\n YOU LOSE")
 
 
