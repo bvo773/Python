@@ -113,16 +113,16 @@ on every year that is divible by 4
 
 FLOW CHART
 			[START]
-			   |
+				 |
 	NO    (year / 4?)     YES
 	|                      |
 	|                      |
  [Not leap year]   NO   (year/100?)  YES
-				   |                  | 
-				   |                  |
+					 |                  | 
+					 |                  |
 				[Leap year]    NO (year/400?) YES
-							   |              |
-							   |              |
+								 |              |
+								 |              |
 						[Not leap year]     [Leap Year]
 '''
 
@@ -143,19 +143,19 @@ def isLeapYear():
 32 - Multiple if statements in sucession | check all conditions, only execute conditions that are true
 FLOW CHART
 									[START]
-									   |
+										 |
 								 no-(height>120)-yes
 								 |                |
 							[cant ride]      <12-(age)------
-											  |    |<12-18 | >18 age
+												|    |<12-18 | >18 age
 											[+5]   |       |
-											  |   [+7]    [+12]
-											  |    |       |
-										   no |____|_______|yes
+												|   [+7]    [+12]
+												|    |       |
+											 no |____|_______|yes
 										no|--(want photos?)--yes
-										  |_______            |
-												  |         [+3]
-												  |           |
+											|_______            |
+													|         [+3]
+													|           |
 											 [The total bill is $x] 
 
 
@@ -303,31 +303,31 @@ V occurs 0 times
 E occurs 2 times
 '''
 def loveCalculator():
-  name1 = str(input("Name of person 1: ")).lower()
-  name2 = str(input("Name of person 2: ")).lower()
+	name1 = str(input("Name of person 1: ")).lower()
+	name2 = str(input("Name of person 2: ")).lower()
 
-  combined_names = name1 + name2
-  trueCount = 0
-  loveCount = 0 
+	combined_names = name1 + name2
+	trueCount = 0
+	loveCount = 0 
 
-  trueCount += combined_names.count("t")
-  trueCount += combined_names.count("r")
-  trueCount += combined_names.count("u")
-  trueCount += combined_names.count("e")
+	trueCount += combined_names.count("t")
+	trueCount += combined_names.count("r")
+	trueCount += combined_names.count("u")
+	trueCount += combined_names.count("e")
 	
-  loveCount += combined_names.count("l")
-  loveCount += combined_names.count("o")
-  loveCount += combined_names.count("v")
-  loveCount += combined_names.count("e")
+	loveCount += combined_names.count("l")
+	loveCount += combined_names.count("o")
+	loveCount += combined_names.count("v")
+	loveCount += combined_names.count("e")
 
 
-  score = str(trueCount) + str(loveCount)
-  numScore = int(score)
-  if (numScore < 10 or numScore > 90):
-	  print(f"Your score is {score}, you go together like coke and mentos")
-  elif (numScore >= 40 and numScore <= 50):
-	  print(f"Your score is {score}, you are alright together")
-  else:
-	  print(f"Your score is {score}")
+	score = str(trueCount) + str(loveCount)
+	numScore = int(score)
+	if (numScore < 10 or numScore > 90):
+		print(f"Your score is {score}, you go together like coke and mentos")
+	elif (numScore >= 40 and numScore <= 50):
+		print(f"Your score is {score}, you are alright together")
+	else:
+		print(f"Your score is {score}")
 
 loveCalculator()
