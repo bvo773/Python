@@ -43,7 +43,7 @@ if choice == "left":
 		elif choice == "blue":
 			print("You were attacked by Orochimarau!")
 		elif choice == "yellow":
-			print("\"Naruto reunited with Hinata. You Win!\"")
+		 print("\"Naruto reunited with Hinata. You Win!\"")
 		else:
 			print("GAME OVER")
 	else:
