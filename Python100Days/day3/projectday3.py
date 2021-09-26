@@ -12,21 +12,22 @@ PROJECT RESCUING PRINCESS HINATA!
             [__________]__,'-._/
              )'o\ ' o) \/ )
              \  /   __  ./
-              \=`   ==,\..
+              \=`   ==,\..\ 
                \ -. `,' (333
-               3`--''    ###.
+               3`--''    333.
              ,333_) /mm33333:.
-            |:#:mmmmmm333333::|
-            |:#:333333333::##'|
-            ':#:ctr3333''#####|
-             |:#:#\###########|
-             |:#:##\##########/
-             |:#:###\########|#(
-             /:#:|:::\|::::::|:(
-             ):#:|::::\::::::|:/
+            |:#:mmmmmm333333::
+            |:#:333333333::##'
+            ':#:ctr3333''#####
+             |:#:#############
+             |:#:#############
+             |:#:###########|#
+             /:#:|:::|::::::|:(
+             ):#:|::::::::::|:/
             /:#;/:::::<::::::|(
 ***********************************
 ''')
+
 
 
 print("Welcome to Saving Princess Hinata Quest! .")
@@ -38,15 +39,15 @@ if choice == "left":
 	if choice == "wait":
 		choice = str(input("Which chambers to open? \"Red\",\"Blue\",\"Yellow\"?\n ")).lower()
 		if choice == "red":
-				print("You were burned by fire. Game Over!")
+			print("You were burned by fire. Game Over!")
 		elif choice == "blue":
-				print("You were attacked by Orochimarau!")
+			print("You were attacked by Orochimarau!")
 		elif choice == "yellow":
-				print("\"Naruto reunited with Hinata. You Win!\"")
+			print("\"Naruto reunited with Hinata. You Win!\"")
 		else:
-				print("GAME OVER")
+			print("GAME OVER")
 	else:
-			print("You were ambused and swallowed by Kabuto's snakes. Game over")    
+		print("You were ambused and swallowed by Kabuto's snakes. Game over")    
 	print()
 else:
-    print("You fell into a booby trap. Game over!")
+	print("You fell into a booby trap. Game over!")

@@ -43,13 +43,13 @@ def exercise4():
 	print("b: " + b)
 
 def project_brand_name_generator():
-	# Greetings for the program
-	print("Hello, program for a brand name")
+  # Greetings for the program
+  print("Hello, program for a brand name")
 	# Ask user city
-	city = input("What city do you live in?\n")
+  city = input("What city do you live in?\n")
 	# Ask user for the name of a pet
-	pet = input("What is your pet name?\n")
+  pet = input("What is your pet name?\n")
 	# Combine name of city and pet for brand name
-	print("Brand name: " + city + " " + pet)
+  print("Brand name: " + city + " " + pet)
 
 project_brand_name_generator()
