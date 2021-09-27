@@ -1,4 +1,4 @@
-#Password Generator Project
+#Password Generator Project based on the number of letters, symbols, and numbers user in
 
 import random
 letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
@@ -17,21 +17,18 @@ randomLetters = ""
 randomSymbols = ""
 randomNumbers = ""
 
-for i in range(0,nrLetters): # not using i cause u are using a random index
-  randomLetter = letters[random.randint(0,len(letters)-1)]
-  randomLetters += str(randomLetter)
+for i in range(1,nrLetters+1):
+  randomLetters += random.choice(letters)
 
-for i in range(0, nrSymbols):
-  randomSymbol = symbols[random.randint(0,len(symbols)-1)]
-  randomSymbols += str(randomSymbol)
+for i in range(1, nrSymbols+1):
+  randomSymbols += random.choice(symbols)
 
-for i in range(0, nrNumbers):
-  randomNumber = numbers[random.randint(0, len(numbers)-1)]
-  randomNumbers += str(randomNumber)
+for i in range(1, nrNumbers+1):
+  randomNumbers += random.choice(numbers)
 
 easyPassword = str(randomLetters + randomSymbols + randomNumbers)
 
-print(f"Easy Password:\n {easyPassword}")
+print(f"\nEasy Password:\n {easyPassword}")
 
 
 #Hard Level - Order of characters randomised:
@@ -40,5 +37,6 @@ print(f"Easy Password:\n {easyPassword}")
 # join() method to concat the new shuffled list to an empty string
 passwordList = list(easyPassword)
 random.shuffle(passwordList)
-hardPassword = "".join(passwordList)
-print(f"Hard Password:\n {hardPassword}")
+hardPassword = "".join(passwordList) # or iterate through the list and get each char
+print(f"\nHard Password:\n {hardPassword}")
+
