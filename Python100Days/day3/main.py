@@ -1,5 +1,5 @@
 '''
-DAY 3 TOPICS - CONDITIONAL STATEMENTS | LOGICAL OPERATORS| CODE BLOCKS | SCOPE
+DAY 3 TOPICS - CONDITIONAL STATEMENTS/OPERATORS | LOGICAL OPERATORS| CODE BLOCKS | SCOPE
 '''
 
 # 26 - Control Flow - IF/ELSE Statement and Conditional Operators
@@ -9,7 +9,7 @@ if condition:
 else:
 	do this
 
-COMPARISON OPERATORS
+COMPARISON/CONDITIONAL OPERATORS
 Operator
 	>  | greater than
 	<  | less than
@@ -239,7 +239,7 @@ def exercise4():
 	print("Your final bill is: " + str(bill)) 
 
 '''
-35 - Logical Operators to check for "multiple conditions"
+35 - LOGICAL OPERATORS to check for "multiple conditions"
 if condition1 & condition2 & condition3:
 	do this
 else:
@@ -247,8 +247,9 @@ else:
 
 Logical AND: (A and B) | both A and B have to be true for the condition to be true
 Logical OR:  (A or  B) | Either A or B has to be true or both A and B for the condition to be true
-Logical NOT not(E) | Reverse the condition -> if condition true, not(condition) -> false (vice versa)
-Eg. for Logical not
+Logical NOT: not(E) | Reverse the condition -> if condition true, not(condition) -> false (vice versa)
+
+EXAMPLE for Logical not
 x = 12
 x > 14 -> False
 not (x>14) -> True

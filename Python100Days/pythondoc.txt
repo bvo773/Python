@@ -11,9 +11,14 @@ str.upper()
 str.split() - remove white space || str.split(", ") - renove comma, and a whitespace
 "".join(list)
 
-PYTHON MODULE
+PYTHON BUILT IN FUNCTIONS
 round(float) // nearest whole
 round(float,2) //2 decimal places
+print()|len()
+int()|str()|float()
+list()
+
+
 
 
 LIST MODULE []
