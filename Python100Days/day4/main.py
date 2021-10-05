@@ -1,5 +1,5 @@
 '''
-DAY 4 - RANDOMISATION AND PYTHON LISTS
+DAY 4 - RANDOMISATION AND PYTHON LISTS ***
 MODULE: random
 DOC: https://www.askpython.com/python-modules/python-random-module-generate-random-numbers-sequences
 VID: https://www.khanacademy.org/computing/computer-science/cryptography/crypt/v/random-vs-pseudorandom-number-generators
@@ -103,7 +103,8 @@ Documentation:
 '''
 def bankerRoulete():
 	import random
-	rich_bankers = str(input("Participant bank players separated by a comma.\n ")).split(", ") # param: the character(s) to split -> ", " (comma and blank space)
+  # param: the character(s) to split -> ", " (comma and blank space) and return a list of strings without characters ', '
+	rich_bankers = str(input("Participant bank players separated by a comma.\n ")).split(", ") 
 	person_who_paid = random.choice(rich_bankers)
 	# person_who_paid = rich_bankers[random.randint(0, len(rich_bankers)-1)]
 	print(f"{person_who_paid} is going to pay the Bill!")

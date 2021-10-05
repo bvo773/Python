@@ -8,7 +8,7 @@ random.random() // [0,1) 0.00000 - 0.99999
 STRING MODULE
 str.lower()
 str.upper()
-str.split() - remove white space || str.split(", ") - renove comma, and a whitespace
+str.split() - remove white space || str.split(", ") - renove comma, and a whitespace and return as a list
 "".join(list)
 
 PYTHON BUILT IN FUNCTIONS
@@ -16,9 +16,7 @@ round(float) // nearest whole
 round(float,2) //2 decimal places
 print()|len()
 int()|str()|float()
-list()
-
-
+list() # returns an object as list
 
 
 LIST MODULE []

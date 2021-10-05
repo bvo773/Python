@@ -35,14 +35,30 @@ DOC: https://www.python.org/dev/peps/pep-0008/
 '''
 
 '''
-60 - WHILE LOOPS
+60 - WHILE LOOPS 
 FILE: hurdle_2.py
-while something_is_true: #usually use to evaluate if your (condition) is true, false loop stops
-  #Do something repeatedly
+Note: can be stuck in INFINITE loop if condition is NEVER FALSE
+while something_is_true: #usually use to evaluate if your (condition) is TRUE  until FALSE loop stops
+  #Do something repeatedly 
 
 for item in list_of_items:
   #Do something for each item
 
 for number in range(a,b):  #create a range [a,b) and use the number within that range to do something
   print(number)
+'''
+
+'''
+61 - HURDLES CHALLENGE USING WHILE LOOPS
+FILE: hurdle_3.py
+'''
+
+'''
+62 - HURDLES CHALLENGE JUMPING OVER HURDLES USING WHILE LOOPS
+FILE: hurdle_4.py
+'''
+
+'''
+63 - COMPLETE MAZE
+FILE: maze_project.py
 '''
