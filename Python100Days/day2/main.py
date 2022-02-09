@@ -26,10 +26,12 @@ def type_error():
 	print(type(name_length))
 	print("Your name has " + name_length + " characters") # TypeError: int object
 
+
 def type_conversion():
 	name_length = len(input("What is your name? "))
 	name_str_length = str(name_length) #convert int object to str object using str()
 	print("Your name has " + name_str_length + " characters")
+
 
 def type_conversion2():
 	print(70 + float("100.5")) #convert string to float and add it to int
@@ -108,7 +110,7 @@ def lifeInWeeks():
 	HINT 1: https://www.google.com/search?q=how+to+round+number+to+2+decimal+places+python&oq=how+to+round+number+to+2+decimal
 	HINT 2: https://www.kite.com/python/answers/how-to-limit-a-float-to-two-decimal-places-in-python
 	'''
-	def tipCalculator():
+def tipCalculator():
 	print("Welcome to the tip calculator")
 	totalBill = float(input("What is the total bill? "))
 	tipPercent = int(input("What percentage tip would you like to give? 10, 12, or 15? "))
