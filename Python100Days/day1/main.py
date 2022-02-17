@@ -29,7 +29,7 @@ def exercise2c():
 	print('e.g. print("Hello " + "world")')
 	print("New lines can be created with a backlash and n")
 
-# 11 The Python input() function -> input("A prompt for the user")
+# 11 The Python input() function -> input("A prompt for the user") and take user input as a STRING
 def user_input():
 	print("Hello " + input("What is your name?"))
 

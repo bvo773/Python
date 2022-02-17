@@ -1,24 +1,26 @@
 RANDOM MODULE
-random.choice(list) // random element from the list
-random.shuffle(list) // shuffle list
-random.randint(a,b) [a,b]
-random.random() // [0,1) 0.00000 - 0.99999
+  random.choice(list) // random element from the list
+  random.shuffle(list) // shuffle list
+  random.randint(a,b) [a,b]
+  random.random() // [0,1) 0.00000 - 0.99999
 
 
 STRING MODULE
-str.lower()
-str.upper()
-str.split() - remove white space || str.split(", ") - renove comma, and a whitespace and return as a list
-"".join(list)
+  str.lower()
+  str.upper()
+  str.split() - remove white space || str.split(", ") - renove comma, and a whitespace and return as a list
+  "".join(list)
+
+  " ${:.2f}".format(floatingNumber) # returns a string of a formatted float number with two decimal places
 
 PYTHON BUILT IN FUNCTIONS
-round(float) // nearest whole
-round(float,2) //2 decimal places
-print()|len()
-int()|str()|float()
-list() # returns an object as list
+  round(float) // nearest whole
+  round(float,2) //2 decimal places
+  print()|len()
+  int()|str()|float() # Converting/Casting data types
+  list() # returns an object as list
 
 
 LIST MODULE []
-list.append(item) //add an item to the list
-
+  list.append(item) //add an item to the list
+  myList = [None] * k // Create a list of None k times
