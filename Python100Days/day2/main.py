@@ -156,7 +156,7 @@ def tipCalculatorB():
   #Write your code below this line 👇
 
   print ("Welcome to the tip calculator!")
-  totalBill = float(input("What is the total bill? "))
+  totalBill = float(input("What is the total bill? $"))
   tipPercentage = int(input("How much tip would you like to give up? 10, 12, or 15? "))
   totalPeople = int(input("How many people to split the bill? "))
 

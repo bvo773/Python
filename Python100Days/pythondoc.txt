@@ -22,5 +22,10 @@ PYTHON BUILT IN FUNCTIONS
 
 
 LIST MODULE []
-  list.append(item) //add an item to the list
+  
   myList = [None] * k // Create a list of None k times
+  mylist.append(item) //add an item to the end of list
+  myList[i] = item // Modyfying a list at index i with a new item value
+  myList[i] // List index to get hold of a particular item
+  list[start:end] // List Slicing start: inclusive end: exclusive 
+

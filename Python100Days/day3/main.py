@@ -2,14 +2,14 @@
 DAY 3 TOPICS - CONDITIONAL STATEMENTS/OPERATORS | LOGICAL OPERATORS| CODE BLOCKS | SCOPE
 '''
 
-# 26 - Control Flow - IF/ELSE Statement and Conditional Operators
 '''
+29 - Control Flow - IF/ELSE Statement and Conditional Operators
 if condition:
 	do this
 else:
 	do this
 
-COMPARISON/CONDITIONAL OPERATORS
+COMPARISON/CONDITIONAL OPERATORS(OPERATIONS)
 Operator
 	>  | greater than
 	<  | less than
@@ -20,24 +20,25 @@ Operator
 '''
 def watchRatedRMovies():
 	age = int(input("Age: "))
-	if (age > 18):
+	if age > 18:
 		print("You can watch rated R movies")
 	else:
 		print("Sorry you are underage")
 
 '''
-28 - Write a program that works out whether if a given number is an odd or even number 
+30 - [Interactive Coding Exercise] Write a program that works out whether if a given number is an odd or even number 
+Introducing MODULO % operation
 '''
 def exercise1():
 	num = int(input("What number do you want to check? "))
-	if (num % 2 == 0):
+	if num % 2 == 0:
 		print("This is an even number")
 	else:
 		print("This is an odd number")
 
 
 '''
-29 - Nested if statements and elif statements
+31 - Nested if statements and elif statements
 if condition:
 	if another condition:
 		do this
@@ -49,10 +50,10 @@ else:
 
 def nestedIfElse():
 	height = int(input("Height in cm? "))
-	if (height > 120):
+	if height > 12:
 		print("You can ride the rollercoaster")
 		age = int(input("Age: "))
-		if (age >= 18):
+		if age >= 18:
 			print("Your ticket is $12")
 		else:
 			print("Your ticket is $7")
@@ -70,7 +71,7 @@ else
 '''
 def if_elif_else():
 	height = int(input("Height in cm? "))
-	if (height > 120):
+	if height > 120:
 		print("You can ride the rollercoaster")
 		age = int(input("Age: "))
 		if (age >= 12 and age <= 18):
@@ -83,7 +84,8 @@ def if_elif_else():
 		print("Sorry you can't ride the rollercoaster, too short")
 
 '''
-30 - Write a program that interprets the Body Mass Index (BMI) based on a user's weight and height.
+32 - BMI 2.0
+Write a program that interprets the Body Mass Index (BMI) based on a user's weight and height.
 It should tell them the interpretation of their BMI based on the BMI value. Round results to whole number
 Under 18.5 they are underweight
 Over 18.5 but below 25 they have a normal weight
@@ -94,43 +96,35 @@ Above 35 they are clinically obese.
 Formula: BMI = weight(kg)/ [height(m)]^2
 '''
 def exercise2():
-	weight = float(input("Weight (kg): "))
-	height = float(input("Height (m): "))
+  weight = float(input("Weight (kg): "))
+  height = float(input("Height (m): "))
 
-	bmi = round(weight / (height ** 2))
-	if (bmi < 18.5): print(f"BMI: {bmi}, underweight")
-	elif (bmi < 25): print(f"BMI: {bmi}, normal weight")
-	elif (bmi < 30): print(f"BMI: {bmi}, slightly overweight")
-	elif (bmi < 35): print(f"BMI: {bmi}, obese")
-	else: print(f"{bmi}, clinically obese")
+  bmi = round(weight / (height ** 2))
+  if bmi < 18.5: 
+    print(f"BMI: {bmi}, underweight")
+  elif bmi < 25: 
+    print(f"BMI: {bmi}, normal weight")
+  elif bmi < 30 : 
+    print(f"BMI: {bmi}, slightly overweight")
+  elif (bmi < 35):
+    print(f"BMI: {bmi}, obese")
+  else: 
+    print(f"{bmi}, clinically obese")
 
 
 '''
-31 - Write a program that works whether a given year is a leap year 
+33 - Write a program that works whether a given year is a leap year 
 on every year that is divible by 4
 	except every year is divisible by 100
 		unless the year is divisible by 400
 
-FLOW CHART
-			[START]
-				 |
-	NO    (year / 4?)     YES
-	|                      |
-	|                      |
- [Not leap year]   NO   (year/100?)  YES
-					 |                  | 
-					 |                  |
-				[Leap year]    NO (year/400?) YES
-								 |              |
-								 |              |
-						[Not leap year]     [Leap Year]
 '''
 
 def isLeapYear():
 	year = int(input("Year: "))
-	if (year % 4 == 0):
-		if (year % 100 == 0):
-			if(year % 400 == 0):
+	if year % 4 == 0:
+		if year % 100 == 0:
+			if year % 400 == 0:
 				print (f"{year} is a leap year")
 			else:
 				print (f"{year} not leap year")
@@ -140,30 +134,28 @@ def isLeapYear():
 		print(f"{year} not leap year")
 
 '''
-32 - Multiple if statements in sucession | check all conditions, only execute conditions that are true
-FLOW CHART
-									[START]
-										 |
-								 no-(height>120)-yes
-								 |                |
-							[cant ride]      <12-(age)------
-												|    |<12-18 | >18 age
-											[+5]   |       |
-												|   [+7]    [+12]
-												|    |       |
-											 no |____|_______|yes
-										no|--(want photos?)--yes
-											|_______            |
-													|         [+3]
-													|           |
-											 [The total bill is $x] 
+34 - Multiple IF statements in Sucession 
+if/ elif/ else - Only a, b, or c is executed
+  if condition1:
+    do A
+  elif condition2:
+    do B
+  else:
+    do C
 
+Multiple if - If all conditions are true, A B C are executed
+  if condition1:
+    do A
+  if condition2:
+    do B
+  if condition3:
+    do C
 
 '''
 
 def multipleIf():
 	height = int(input("Height cm: "))
-	if(height > 120):
+	if height >- 120:
 		print("Can ride")
 		age = int(input("Age: "))
 		cost = 0
@@ -174,7 +166,7 @@ def multipleIf():
 		else:
 			cost += 12
 		
-		wantPhotos = str(input("Want photos? y/n? "))
+		wantPhotos = str(input("Want photos taken? y/n? "))
 		if (wantPhotos == 'y'):
 			cost += 3
 		
@@ -182,7 +174,7 @@ def multipleIf():
 	else:
 		print("Can't ride")
 
-def multipleIfV():
+def multipleIf2():
 	height = float(input('Height (ft.in): '))
 
 	if (height > 4):
@@ -205,7 +197,8 @@ def multipleIfV():
 		print("Sorry you cant ride")
 
 '''
-33 - Write a program to calculate the bills of the pizza (Practice multiple ifs statements)
+35 - [Interactive Coding Exercising] Pizza Order Practice
+Write a program to calculate the bills of the pizza (Practice multiple ifs statements)
 small pizza - 15
 medium pizza - 20
 large pizza - 25
@@ -213,6 +206,7 @@ pepperoni for small pizza - 2
 pepperoni for medium or large pizza - 3
 extra cheese for any pizza - 1
 '''
+
 def exercise4():
 	print("Welcome to Python Pizza Deliveries!")
 	size = input("What size do you want? S, M, or L: ")
@@ -220,9 +214,9 @@ def exercise4():
 	addCheese = input("Do you want to add cheese? Y or N: ")
 
 	bill = 0
-	if (size == "S"):
+	if size == "S":
 		bill += 15
-	elif (size == "M"):
+	elif size == "M":
 		bill += 20
 	else:
 		bill += 25
@@ -239,7 +233,7 @@ def exercise4():
 	print("Your final bill is: " + str(bill)) 
 
 '''
-35 - LOGICAL OPERATORS to check for "multiple conditions"
+36 - LOGICAL OPERATORS to check for "multiple conditions"
 if condition1 & condition2 & condition3:
 	do this
 else:
@@ -255,30 +249,34 @@ x > 14 -> False
 not (x>14) -> True
 '''
 def logicalOperators():
-	height = int(input("Height cm: "))
-	if(height > 120):
-		print("Can ride")
-		age = int(input("Age: "))
-		cost = 0
-		if (age < 12):
-			cost += 5
-		elif (age >= 12 and age < 18):
-			cost += 7
-		elif (age >= 18 and not(age >= 45 and age <=55)):
-			cost += 12
-		else:
-			print("Your age is classified as midlife crisis, have a free ride on us")
-		
-		wantPhotos = str(input("Want photos? y/n? "))
-		if (wantPhotos == 'y'):
-			cost += 3
-		
-		print(f"The total bill is ${cost}")
-	else:
-		print("Can't ride")  
+  height = int(input("Height cm: "))
+  if height > 120:
+    print("Can ride")
+    age = int(input("Age: "))
+    cost = 0
+    if age < 12:
+      cost += 5
+      print("Child tickets are $5")
+    elif age <= 18:
+      cost += 7
+      print("Youth tickets are $7")
+    elif age >= 45 and age <= 55:
+      print("Everything is going to be ok. Have a free ride on us")
+    else:
+      bill += 12
+      print("Adult tickets are 12.")
+
+    wantPhotos = str(input("Want photos? y/n? "))
+    if (wantPhotos == 'y'):
+      cost += 3
+
+    print(f"The total bill is ${cost}")
+
+  else:
+    print("Can't ride")  
 
 '''
-35 - Love Calculator
+37  - [Interacting Coding Exercise] Love Calculator
 Suggestive functions: lower(), count()
 Take both people's names and check for the number of times the letters in the word TRUE occurs. Then check for the number of times the letters in the word LOVE occurs. Then combine these numbers to make a 2 digit number. 
 `name1 = "Angela Yu"`
@@ -331,4 +329,35 @@ def loveCalculator():
 	else:
 		print(f"Your score is {score}")
 
-loveCalculator()
+def loveCalculator2():
+  # 🚨 Don't change the code below 👇
+  print("Welcome to the Love Calculator!")
+  name1 = input("What is your name? \n")
+  name2 = input("What is their name? \n")
+  # 🚨 Don't change the code above 👆
+
+  #Write your code below this line 👇
+  combinedNames = (name1 + name2).lower()
+  trueString = "true"
+  trueInt = 0
+  loveString = "love"
+  loveInt = 0
+
+  for c in trueString:
+    #count how many times the character appears in combinedNames and increment trueInt
+    trueInt += combinedNames.count(c)
+
+  for c in loveString:
+    #count how many times the character appears in name1 name2 and increment loveInt
+    loveInt += combinedNames.count(c)
+
+  # Convert it in to string and concatenate the int together to get a loveScore
+  loveScoreString = str(trueInt) + str(loveInt)
+  loveScoreInt = int(loveScoreString)
+
+  if loveScoreInt < 10 or loveScoreInt > 90:
+    print(f"Your score is {loveScoreInt}, you go together like coke and mentos.")
+  elif loveScoreInt >= 40 and loveScoreInt <= 50:
+    print(f"Your score is {loveScoreInt}, you are alright together.")
+  else:
+    print(f"Your score is {loveScoreInt}.")
