@@ -1,15 +1,15 @@
 RANDOM MODULE
-  random.choice(list) // random element from the list
+  random.choice(list) // returns a random element from the list
   random.shuffle(list) // shuffle list
-  random.randint(a,b) [a,b]
-  random.random() // [0,1) 0.00000 - 0.99999
+  random.randint(a,b) [a,b] //inclusive
+  random.random() // [0,1) 0.00000 - 0.99999 
 
 
 STRING MODULE
   str.lower()
   str.upper()
   str.split() - remove white space || str.split(", ") - renove comma, and a whitespace and return as a list
-  "".join(list)
+  "".join(list) - The join() method takes all items in an iterable and joins them into one string. A string must be specified as the separator.
 
   " ${:.2f}".format(floatingNumber) # returns a string of a formatted float number with two decimal places
 
@@ -19,7 +19,8 @@ PYTHON BUILT IN FUNCTIONS
   print()|len()
   int()|str()|float() # Converting/Casting data types
   list() # returns an object as list
-
+  max(list)
+  min(list)
 
 LIST MODULE []
   
@@ -29,3 +30,5 @@ LIST MODULE []
   myList[i] // List index to get hold of a particular item
   list[start:end] // List Slicing start: inclusive end: exclusive 
 
+  mylist.extend("California", "Illinois") # Extend the list, add mulitiple items
+  mylist.remove(x) # Remove first item from the list who value qual to x. 
