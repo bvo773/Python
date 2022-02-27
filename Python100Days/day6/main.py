@@ -1,21 +1,21 @@
 '''
-56 - FUNCTIONS|WHILE LOOPS|CODE BLOCKS
+58 - FUNCTIONS|WHILE LOOPS|CODE BLOCKS
 PROJECT: Have a robot complete any randomly generated maze
 Built-in functions doc: https://docs.python.org/3/library/functions.html
 '''
 
 '''
-57 - DEFINING AND CALLING PYTHON FUNCTIONS
-FUNCTIONS allows us to group code of instructions and refer them later by calling one instruction
+59 - DEFINING AND CALLING PYTHON FUNCTIONS
+FUNCTIONS allows us to group code of instructions and refer to them later by calling with one instruction
 FunctionGame: https://reeborg.ca/reeborg.html?lang=en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=Alone&url=worlds%2Ftutorial_en%2Falone.json
-FORMAT: (input)
-Defining functions:
+FORMAT: def function_name() use def keyword, function name, then follows by a set of parentheses
+Example-
   def functionName():
     #Do this
     #Then do this
     #Finally do this
 
-Calling functions:
+Calling our functions:
   functionName()
 '''
 def myFunction():
@@ -25,20 +25,40 @@ def myFunction():
 myFunction()
 
 '''
-58 - REEBORG HUDDLES CHALLENGE
+60 - REEBORG HUDDLES CHALLENGE
 FILE: hurdle_1.py
+
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+  
+def jump():
+    move()
+    turn_left()
+    move()
+    turn_right()
+    move()
+    turn_right()
+    move()
+    turn_left()
+    
+for i in range(6):
+    jump()
 '''
 
 '''
-59 - INDENTATION
+61 - INDENTATION
 DOC: https://www.python.org/dev/peps/pep-0008/
 '''
 
 '''
-60 - WHILE LOOPS 
+62 - WHILE LOOPS Important
 FILE: hurdle_2.py
-Note: can be stuck in INFINITE loop if condition is NEVER FALSE
-while something_is_true: #usually use to evaluate if your (condition) is TRUE  until FALSE loop stops
+Note: can be stuck in INFINITE loop if condition is NEVER FALSE,
+#usually use to evaluate if your (condition) is TRUE  until condition is FALSE loop stops
+
+while something_is_true: 
   #Do something repeatedly 
 
 for item in list_of_items:
@@ -49,16 +69,21 @@ for number in range(a,b):  #create a range [a,b) and use the number within that 
 '''
 
 '''
-61 - HURDLES CHALLENGE USING WHILE LOOPS
+63 - HURDLES CHALLENGE USING WHILE LOOPS
 FILE: hurdle_3.py
 '''
 
 '''
-62 - HURDLES CHALLENGE JUMPING OVER HURDLES USING WHILE LOOPS
+64 - HURDLES CHALLENGE JUMPING OVER HURDLES USING WHILE LOOPS
 FILE: hurdle_4.py
 '''
 
 '''
-63 - COMPLETE MAZE
+65 - COMPLETE MAZE
 FILE: maze_project.py
+'''
+
+'''
+IF YOU ARE STRUGGLING, ITS OKAY, IT MEANS YOU ARE LEARNING. 
+DONT interpret struggle as a bad thing, it means you are making PROGRESS! KEEP GOING!
 '''

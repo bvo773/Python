@@ -5,18 +5,20 @@ ITERABLE - an iterable such as list, tuple, set, dictionary, etc.
 '''
 
 '''
-48 - Using loop with python Lists
-Loop allows to the execute lines of code multiple times
+50 - Using For Loop with Python Lists
+Loop allows to execute the same line of code multiple times
+for item in list_of_items:
+  #Do somthing to each item
 '''
 def forloop():
   fruits = ["Apple", "Peach", "Pear"]
-  # taking the list fruits and use the var fruit to assign each value in fruits
+  # taking the list fruits and use the var fruit to assign to each item in fruits
   for fruit in fruits: 
     print(fruit)
     print(fruit + " Pie")
 
 '''
-49 - Coding Exercise Average Height
+51 - [Interactive Coding Exercise] Average Height
 RULES: CANNOT use Python functions: sum(iter) and len(list)
 FORMAT:
 		for item in itemList:
@@ -57,7 +59,7 @@ def averageStudentHeights2():
   print(f"There are total of {studentTotal} heights at an average of {averageHeight} cm.")
 
 '''
-50 - CODING EXERCISE HIGH SCORE
+52 - [Interactive Coding Exercuse] HIGH SCORE
 RULES: CANNOT use Python functions: max(iterable), min(iterable)
 '''
 def findMaxScore():
@@ -74,17 +76,18 @@ def findMaxScore():
   print("The highest score is: " + str(maxScore))
 
 '''
-51 - for loops and range() function
+53 - for loops and range() function
 # Sometimes we might want to use a loop completely 'independent' of a list
 CARL GAUSS GENIUS EXERCISE: ADD ALL the numbers from 1 TO 100
-He flipped the numbers around, add the two lines = 101, 50 pairs x 101 = 5050 GENIUS
+He flipped the numbers around, add the two lines = 101, there are 50 pairs of 101 = 5050 GENIUS
 1   + 2  +  3 + ... + 98 + 99 + 100
 100 + 99 + 98 + ... + 3  + 2  + 1
 
 - Can shorten this with the range function: range(start,stop,step)
-- Use range function if you want to generate a (range of numbers to loop through)
+- Use range function if you want to generate a range of numbers to loop throug
+
 SYNTAX:
-for number in range(a,b): #[inclusive-exclusive)
+for number in range(start, end, step): #[inclusive-exclusive)
 				print(number) #each number in that range do something with that number
 '''
 def rangeforloop():
@@ -101,7 +104,7 @@ def rangeforloop():
   print(total)
 
 '''
-51 - CODING EXERCISE ADDING EVEN NUMBERS from 1-100
+54 - [Interactive Coding Exercise] ADDING EVEN NUMBERS from 1-100
 '''
 def addEvenNumbers():
   evenSum = 0
@@ -117,7 +120,7 @@ def addEvenNumbers():
 
 
 '''
-51 - CODING EXERCISE FIZZBUZZ
+55 - CODING EXERCISE FIZZBUZZ
 - You are going to write a program that automatically prints the solution to the FizzBuzz game.
 - Your program should print each number from 1 to 100 in turn
 - When the number is divisible by 3 then instead of printing the number it should print "Fizz".
@@ -151,7 +154,62 @@ def fizzBuzz():
     else:
       print (number)
 
-def helloworld():
-  print("hello world")
 
-fizzBuzz()
+'''
+56 - Day 5 Project password generator
+'''
+def passwordGenerator():
+  #Password Generator Project
+  import random
+  letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+  numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+  symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
+
+  print("Welcome to the PyPassword Generator!")
+  nr_letters= int(input("How many letters would you like in your password?\n")) 
+  nr_symbols = int(input(f"How many symbols would you like?\n"))
+  nr_numbers = int(input(f"How many numbers would you like?\n"))
+
+  #Eazy Level - Order not randomised:
+  #e.g. 4 letter, 2 symbol, 2 number = JduE&!91
+  password = ""
+  for l in range(0, nr_letters):
+    password += letters[random.randint(0, len(letters) - 1)]
+    # password += random.choice(letters)
+
+  for s in range(0, nr_symbols):
+    password += symbols[random.randint(0, len(symbols) - 1)]
+    # password += random.choice(symbols)
+
+    
+  for n in range(0, nr_numbers):
+    password += numbers[random.randint(0, len(numbers) - 1)]
+    # password += random.choice(numbers)
+
+
+  print("Easy password: " + password)
+  # print(type(password))
+  #Hard Level - Order of characters randomised:
+  #e.g. 4 letter, 2 symbol, 2 number = g^2jk8&P
+  passwordList = []
+  for c in password:
+    passwordList.append(c)
+
+  print(f"Before shuffle: {passwordList}")
+  random.shuffle(passwordList)
+  print(f"After shuffle: {passwordList}")
+
+  hardPassword = "".join(passwordList)
+  '''
+  shorter syntax to join each item from a list into an empty string 
+  instead of creating an empty string and cocatenate each char into the string
+  password = ""
+  for char in passworList
+    password += char
+  '''
+
+
+  print("Hard password: " + hardPassword)
+
+
+passwordGenerator()

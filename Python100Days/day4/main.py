@@ -187,7 +187,9 @@ def treasureMapYu():
 	map[row][column] = "X"
 
 	print(f"{map[0]}\n{map[1]}\n{map[2]}")
-
+'''
+47 - Rock Paper Scissors
+'''
 def rockPaperScissors():
   rock = '''
       _______
@@ -222,22 +224,25 @@ def rockPaperScissors():
   cpuChoice = random.randint(0,2)
   userChoice = int(input("What do you choose? Type 0 for Rock, 1 for Paper, or 2 for Scissors.\n"))
 
-  print(resultList[userChoice])
-  print(f"Computer chose: \n{resultList[cpuChoice]}")
-  # user - rock, cpu paper
-  if userChoice == 0 and cpuChoice == 1: 
-    print("You lose!")
-  elif userChoice == 0 and cpuChoice == 2:
-    print("You win!")
-  elif userChoice == 1 and cpuChoice == 0:
-    print("You win!")
-  elif userChoice == 1 and cpuChoice == 2:
-    print("You lose!")
-  elif userChoice == 2 and cpuChoice == 0:
-    print("You lose!")
-  elif userChoice == 2 and cpuChoice == 1:
-    print("You win!")
+  if userChoice >= 3 or userChoice < 0:
+    print("You typed an invalid number, you lose!")
   else:
-    print("Draw!")
+    print(resultList[userChoice])
+    print(f"Computer chose: \n{resultList[cpuChoice]}")
+    # user - rock, cpu paper
+    if userChoice == 0 and cpuChoice == 1: 
+      print("You lose!")
+    elif userChoice == 0 and cpuChoice == 2:
+      print("You win!")
+    elif userChoice == 1 and cpuChoice == 0:
+      print("You win!")
+    elif userChoice == 1 and cpuChoice == 2:
+      print("You lose!")
+    elif userChoice == 2 and cpuChoice == 0:
+      print("You lose!")
+    elif userChoice == 2 and cpuChoice == 1:
+      print("You win!")
+    else:
+      print("Draw!")
 
 rockPaperScissors()
