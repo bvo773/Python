@@ -84,6 +84,6 @@ FILE: maze_project.py
 '''
 
 '''
-IF YOU ARE STRUGGLING, ITS OKAY, IT MEANS YOU ARE LEARNING. 
+IF YOU ARE STRUGGLING, ITS OKAY, IT MEANS YOU ARE LEARNING. The more you are struggling, the more you are learning :).
 DONT interpret struggle as a bad thing, it means you are making PROGRESS! KEEP GOING!
 '''
