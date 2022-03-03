@@ -47,3 +47,8 @@ if choice == "left":
 
 else:
   print(" Fall into a hole. Game over")
+
+621 296 651
+071000013
+
+He’s kept a unified government and not gone along with either what Russia or the US wanted

@@ -22,6 +22,10 @@ PYTHON BUILT IN FUNCTIONS
   max(list)
   min(list)
 
+  # rounding up
+  import math
+  print(int(math.ceil(4.2)))
+
 LIST MODULE []
   
   myList = [None] * k // Create a list of None k times
