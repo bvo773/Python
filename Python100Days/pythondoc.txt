@@ -36,3 +36,4 @@ LIST MODULE []
 
   mylist.extend("California", "Illinois") # Extend the list, add mulitiple items
   mylist.remove(x) # Remove first item from the list who value qual to x. 
+  [1,2,3,4].index(2) -> 1

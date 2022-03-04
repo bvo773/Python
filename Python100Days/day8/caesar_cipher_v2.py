@@ -26,18 +26,13 @@ D E F G H I J
 #https://stackoverflow.com/questions/176918/finding-the-index-of-an-item-in-a-list
 
 author: vbspaceduck 
-please feel free to fork and add more features or your version of it
+replit: https://replit.com/@vbspaceduck/Caesar-Cipher#main.py
+comment: please feel free to fork and add more features or your version of it
 '''
-
 
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
-
-
-
-
 # Combine the encrypt and decrypt functions into a single function called caesar(). 
-
 def caesar(startText, shiftAmount, cipherDirection):
   endText = ""
   for char in startText:
