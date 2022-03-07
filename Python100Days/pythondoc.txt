@@ -10,6 +10,7 @@ STRING MODULE
   str.upper()
   str.split() - remove white space || str.split(", ") - renove comma, and a whitespace and return as a list
   "".join(list) - The join() method takes all items in an iterable and joins them into one string. A string must be specified as the separator.
+  str.title() - every word will start out with a capital letter
 
   " ${:.2f}".format(floatingNumber) # returns a string of a formatted float number with two decimal places
 
@@ -37,3 +38,6 @@ LIST MODULE []
   mylist.extend("California", "Illinois") # Extend the list, add mulitiple items
   mylist.remove(x) # Remove first item from the list who value qual to x. 
   [1,2,3,4].index(2) -> 1
+
+  DICTIONARY {key: value}
+  # dict.values() or dict.keys() returns a list of values or keys
