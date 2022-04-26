@@ -11,10 +11,8 @@
 from art import logo
 import random
 
-
 EASY_ATTEMPTS = 10
 HARD_ATTEMPTS = 5
-
 
 def check_attempts(attempts, guess)-> int:
   if guess == 0:
@@ -45,9 +43,11 @@ def print_result(attempts, guess_check):
     print(f"You've run out of guesses, you lose!")
   elif guess_check != 0 and (attempts <= 10 and attempts >= 1):
     print(f"You got it! The answer was {guess_check}.")
+    
 def game():
-
+  print(logo)
   random_num = random.randint(0, 100)
+  print("Welcome to the guessing game")
   print("I'm thinking of a number between 1 and 100.")
   print(f"Psst, the correct answer is {random_num}")
 
@@ -63,5 +63,5 @@ def game():
     print_result(attempts=attempts, guess_check=guess_check)
     
     
-print(logo)
+
 game()
