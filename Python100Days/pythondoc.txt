@@ -41,3 +41,17 @@ LIST MODULE []
 
   DICTIONARY {key: value}
   # dict.values() or dict.keys() returns a list of values or keys
+
+HOW TO APPROACH ANY PROBLEMS/PROJECTS
+  1) Breakdown the PROBLEM
+  2) Make a TODO List - Start with the easiest
+    TODO 
+      - Make a list of dice emojis
+      - Generate a random number (Simple)
+      - Compare dice value against previous value
+  3) Turn the problem into comments
+    # Import the random module.
+    # Use randint() to generate A random integer.
+
+  4) Write Code -> Run code -> Fix code
+  5) Next task
