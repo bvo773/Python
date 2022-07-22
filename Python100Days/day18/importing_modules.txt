@@ -1,0 +1,28 @@
+IMPORTING MODULES IN PYTHON
+    # Use it once or twice, import the whole module
+    keyword   Module name
+    import    turtle 
+
+    timmy = turtle.Turtle() #calling Turtle class to instantiate our Turtle
+
+    # Using something(class) from a module many times
+    keyword   Module name  keyword   Thing in Module
+    from      turtle       import    Turtle
+
+    timmy = Turtle() 
+    aceu = Turtle()
+
+    # Import everything - avoid using this
+    keyword   Module name  keyword   Everything
+    from      turtle       import    *
+
+    forward(100)
+
+    # Aliasing Modules, we import from the module and we give that a module a name we defined
+    # Useful when that module have a long name
+    keyword   Module name  keyword  alias name
+    import    turtle       as         t
+
+    aceu = t.Turtle()
+
+# Installing Modules
